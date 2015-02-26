@@ -1,8 +1,6 @@
 #ifndef _main_H_
     #define _main_H_
 
-
-
 #include <SDL2/SDL.h>
 #include "stage.h"
 

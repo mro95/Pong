@@ -90,7 +90,7 @@ void Main::handleEvent( SDL_Event* event )
 
     if( event->type == SDL_MOUSEMOTION)
     {
-        stage.onMouseMosion( &event->motion );
+        stage.onMouseMotion(&event->motion);
     }
 
 }

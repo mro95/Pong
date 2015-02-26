@@ -15,7 +15,6 @@ void Stage::render( SDL_Renderer* renderer )
 {
      SDL_SetRenderDrawColor( renderer, 0, 175, 255, 255 );
 
-     Bat player;
      player.render( renderer, 20, 20);
 
      Bat npc;
@@ -30,7 +29,7 @@ void Stage::update( int dt )
 
 }
 
-void onMouseMosion( SDL_MouseMotionEvent* ev )
+void Stage::onMouseMotion(SDL_MouseMotionEvent* mouse)
 {
-    std::cout << "mouse" << std::endl;
+    player.onMouseMotion(mouse);
 }

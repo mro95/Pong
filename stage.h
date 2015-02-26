@@ -12,7 +12,10 @@ class Stage
 
         void update( int dt );
 
-        void onMouseMosion( SDL_MouseMotionEvent* ev );
+        void onMouseMotion(SDL_MouseMotionEvent* mouse);
+
+    private:
+        Bat player;
 
 };
 
