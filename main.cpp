@@ -1,4 +1,6 @@
 #include <iostream>
+#include <unistd.h>
+
 #include "main.h"
 
 #define MAX_DT 0.025
@@ -31,15 +33,20 @@ int Main::execute( )
         dt = now - lastFrame;
         double game_dt = fmin(dt, MAX_DT);
         int reps = 0;
-        while(game_now < now) {
-            update( game_dt );
-            game_now += game_dt;
-            reps++;
-        }
-        printf("now=%8.4f  game_now=%8.4f  dt=%6.4f  game_dt=%6.4f  reps=%d\n", now, game_now, dt, game_dt, reps);
+//        while(game_now < now) {
+//            if( reps > 10)
+//                running = false;
+//            update( game_dt );
+//            game_now += game_dt;
+//            reps++;
+//        }
+
+        update( dt );
+        //printf("now=%8.4f  game_now=%8.4f  dt=%6.4f  game_dt=%6.4f  reps=%d\n", now, game_now, dt, game_dt, reps);
         render( );
-        lastFrame = now;
+
         SDL_Delay( 1 );
+        lastFrame = now;
     }
 
     return 0;

@@ -4,6 +4,7 @@
 #include <SDL2/SDL.h>
 #include "bat.h"
 #include "ball.h"
+#include "rect.h"
 
 class Stage
 {

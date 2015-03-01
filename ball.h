@@ -14,11 +14,19 @@ class Ball
         void update( double dt );
 
         Rect ball;
+        bool collision(Rect* other);
+
 
         double x;
         double y;
+        double w;
+        double h;
+
         double dx;
         double dy;
+
+        bool a;
+        bool b;
 
 };
 

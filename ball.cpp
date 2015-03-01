@@ -5,14 +5,20 @@ Ball::Ball(): ball(x,y,20,20)
 {
     x = ((800/2) - (20 / 2));
     y = ((600/2) - (20 / 2));
-    dx = 1000;
-    dy = 1000;
+    w = 20;
+    h = 20;
+
+    dx = 500;
+    dy = 500;
+
+    a = false;
+    b = false;
 }
 
 void Ball::render( SDL_Renderer* renderer )
 {
-    ball.w = 20;
-    ball.h = 20;
+    ball.w = w;
+    ball.h = h;
     ball.x = x;
     ball.y = y;
 
@@ -25,4 +31,9 @@ void Ball::update( double dt )
 {
     x += dx * dt;
     y += dy * dt;
+}
+
+bool Ball::collision(Rect* other)
+{
+    return ball.collision(other);
 }

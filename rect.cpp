@@ -1,5 +1,7 @@
 #include <math.h>
 #include <SDL2/SDL.h>
+#include <iostream>
+
 #include "rect.h"
 
 Rect::Rect(double x, double y, double w, double h)
@@ -8,7 +10,6 @@ Rect::Rect(double x, double y, double w, double h)
     this->y = y;
     this->w = w;
     this->h = h;
-
 }
 
 SDL_Rect Rect::getRect()
