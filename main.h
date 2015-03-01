@@ -2,6 +2,7 @@
     #define _main_H_
 
 #include <SDL2/SDL.h>
+#include <math.h>
 #include "stage.h"
 
 class Main {
@@ -24,7 +25,7 @@ class Main {
 
         bool initialize( );
         void render();
-        void update( int dt );
+        void update( double dt );
 
         Stage stage;
 };

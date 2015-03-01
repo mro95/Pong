@@ -1,0 +1,130 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+$	tags	/^defineTest	deployment.pri	\/^defineTest(qtcAddDeployment) {$\/;"	f	signature:(qtcAddDeployment)$/;"	m	class:__anon1	file:	access:private
+Ball	ball.cpp	/^Ball::Ball()$/;"	f	class:Ball	signature:()
+Ball	ball.h	/^        Ball( );$/;"	p	class:Ball	access:public	signature:( )
+Ball	ball.h	/^class Ball$/;"	c
+Ball::Ball	ball.cpp	/^Ball::Ball()$/;"	f	class:Ball	signature:()
+Ball::Ball	ball.h	/^        Ball( );$/;"	p	class:Ball	access:public	signature:( )
+Ball::ball	ball.h	/^        SDL_Rect ball;$/;"	m	class:Ball	access:public
+Ball::main	ball.h	/^        Main main;$/;"	m	class:Ball	access:public
+Ball::render	ball.cpp	/^void Ball::render( SDL_Renderer* renderer )$/;"	f	class:Ball	signature:( SDL_Renderer* renderer )
+Ball::render	ball.h	/^        void render( SDL_Renderer* renderer );$/;"	p	class:Ball	access:public	signature:( SDL_Renderer* renderer )
+Bat	bat.cpp	/^Bat::Bat()$/;"	f	class:Bat	signature:()
+Bat	bat.h	/^        Bat( );$/;"	p	class:Bat	access:public	signature:( )
+Bat	bat.h	/^class Bat$/;"	c
+Bat::Bat	bat.cpp	/^Bat::Bat()$/;"	f	class:Bat	signature:()
+Bat::Bat	bat.h	/^        Bat( );$/;"	p	class:Bat	access:public	signature:( )
+Bat::dy	bat.h	/^        double dy;$/;"	m	class:Bat	access:private
+Bat::height	bat.h	/^        double height;$/;"	m	class:Bat	access:private
+Bat::onMouseMotion	bat.cpp	/^void Bat::onMouseMotion(SDL_MouseMotionEvent* mouse)$/;"	f	class:Bat	signature:(SDL_MouseMotionEvent* mouse)
+Bat::onMouseMotion	bat.h	/^        void onMouseMotion(SDL_MouseMotionEvent* mouse);$/;"	p	class:Bat	access:public	signature:(SDL_MouseMotionEvent* mouse)
+Bat::render	bat.cpp	/^void Bat::render( SDL_Renderer* renderer )$/;"	f	class:Bat	signature:( SDL_Renderer* renderer )
+Bat::render	bat.h	/^        void render( SDL_Renderer* renderer);$/;"	p	class:Bat	access:public	signature:( SDL_Renderer* renderer)
+Bat::targetY	bat.h	/^        double targetY;$/;"	m	class:Bat	access:private
+Bat::update	bat.cpp	/^void Bat::update( double dt )$/;"	f	class:Bat	signature:( double dt )
+Bat::update	bat.h	/^        void update( int dt );$/;"	p	class:Bat	access:public	signature:( int dt )
+Bat::width	bat.h	/^        double width;$/;"	m	class:Bat	access:private
+Bat::x	bat.h	/^        double x;$/;"	m	class:Bat	access:private
+Bat::y	bat.h	/^        double y;$/;"	m	class:Bat	access:private
+MAX_SPEED	bat.cpp	/^#define MAX_SPEED /;"	d	file:
+Main	main.cpp	/^Main::Main( )$/;"	f	class:Main	signature:( )
+Main	main.h	/^        Main( );$/;"	p	class:Main	access:public	signature:( )
+Main	main.h	/^class Main {$/;"	c
+Main::Main	main.cpp	/^Main::Main( )$/;"	f	class:Main	signature:( )
+Main::Main	main.h	/^        Main( );$/;"	p	class:Main	access:public	signature:( )
+Main::execute	main.cpp	/^int Main::execute( )$/;"	f	class:Main	signature:( )
+Main::execute	main.h	/^        int execute();$/;"	p	class:Main	access:public	signature:()
+Main::handleEvent	main.cpp	/^void Main::handleEvent( SDL_Event* event )$/;"	f	class:Main	signature:( SDL_Event* event )
+Main::handleEvent	main.h	/^        void handleEvent( SDL_Event* event );$/;"	p	class:Main	access:private	signature:( SDL_Event* event )
+Main::initialize	main.cpp	/^bool Main::initialize( )$/;"	f	class:Main	signature:( )
+Main::initialize	main.h	/^        bool initialize( );$/;"	p	class:Main	access:private	signature:( )
+Main::render	main.cpp	/^void Main::render( )$/;"	f	class:Main	signature:( )
+Main::render	main.h	/^        void render();$/;"	p	class:Main	access:private	signature:()
+Main::renderer	main.h	/^        SDL_Renderer* renderer;$/;"	m	class:Main	access:private
+Main::running	main.h	/^        bool running;$/;"	m	class:Main	access:private
+Main::stage	main.h	/^        Stage stage;$/;"	m	class:Main	access:private
+Main::update	main.cpp	/^void Main::update( int dt )$/;"	f	class:Main	signature:( int dt )
+Main::update	main.h	/^        void update( int dt );$/;"	p	class:Main	access:private	signature:( int dt )
+Main::window	main.h	/^        SDL_Window* window;$/;"	m	class:Main	access:private
+Main::windowHeight	main.h	/^        static const int windowHeight = 600;$/;"	m	class:Main	access:public
+Main::windowWidth	main.h	/^        static const int windowWidth = 800;$/;"	m	class:Main	access:public
+NPC	NPC.cpp	/^NPC::NPC()$/;"	f	class:NPC	signature:()
+NPC	NPC.h	/^        NPC();$/;"	p	class:NPC	access:public	signature:()
+NPC	NPC.h	/^class NPC$/;"	c
+NPC::NPC	NPC.cpp	/^NPC::NPC()$/;"	f	class:NPC	signature:()
+NPC::NPC	NPC.h	/^        NPC();$/;"	p	class:NPC	access:public	signature:()
+NPC::bat	NPC.h	/^        Bat bat;$/;"	m	class:NPC	access:private
+NPC::render	NPC.cpp	/^void NPC::render( SDL_Renderer* renderer )$/;"	f	class:NPC	signature:( SDL_Renderer* renderer )
+NPC::render	NPC.h	/^        void render( SDL_Renderer* renderer );$/;"	p	class:NPC	access:public	signature:( SDL_Renderer* renderer )
+NPC::update	NPC.cpp	/^void NPC::update( int dt )$/;"	f	class:NPC	signature:( int dt )
+NPC::update	NPC.h	/^        void update( int dt );$/;"	p	class:NPC	access:public	signature:( int dt )
+Stage	stage.cpp	/^Stage::Stage()$/;"	f	class:Stage	signature:()
+Stage	stage.h	/^        Stage();$/;"	p	class:Stage	access:public	signature:()
+Stage	stage.h	/^class Stage$/;"	c
+Stage::Stage	stage.cpp	/^Stage::Stage()$/;"	f	class:Stage	signature:()
+Stage::Stage	stage.h	/^        Stage();$/;"	p	class:Stage	access:public	signature:()
+Stage::onMouseMotion	stage.cpp	/^void Stage::onMouseMotion(SDL_MouseMotionEvent* mouse)$/;"	f	class:Stage	signature:(SDL_MouseMotionEvent* mouse)
+Stage::onMouseMotion	stage.h	/^        void onMouseMotion(SDL_MouseMotionEvent* mouse);$/;"	p	class:Stage	access:public	signature:(SDL_MouseMotionEvent* mouse)
+Stage::player	stage.h	/^        Bat player;$/;"	m	class:Stage	access:private
+Stage::render	stage.cpp	/^void Stage::render( SDL_Renderer* renderer )$/;"	f	class:Stage	signature:( SDL_Renderer* renderer )
+Stage::render	stage.h	/^        void render( SDL_Renderer* renderer );$/;"	p	class:Stage	access:public	signature:( SDL_Renderer* renderer )
+Stage::update	stage.cpp	/^void Stage::update( int dt )$/;"	f	class:Stage	signature:( int dt )
+Stage::update	stage.h	/^        void update( int dt );$/;"	p	class:Stage	access:public	signature:( int dt )
+_Ball_H_	ball.h	/^#define _Ball_H_$/;"	d
+_NPC_H_	NPC.h	/^    #define _NPC_H_$/;"	d
+__anon1::$	tags	/^defineTest	deployment.pri	\/^defineTest(qtcAddDeployment) {$\/;"	f	signature:(qtcAddDeployment)$/;"	m	class:__anon1	file:	access:private
+_bat_H_	bat.h	/^    #define _bat_H_$/;"	d
+_main_H_	main.h	/^    #define _main_H_$/;"	d
+_stage_H_	stage.h	/^    #define _stage_H_$/;"	d
+ball	ball.h	/^        SDL_Rect ball;$/;"	m	class:Ball	access:public
+bat	NPC.h	/^        Bat bat;$/;"	m	class:NPC	access:private
+defineTest	deployment.pri	/^defineTest(qtcAddDeployment) {$/;"	f	signature:(qtcAddDeployment)
+dy	bat.h	/^        double dy;$/;"	m	class:Bat	access:private
+execute	main.cpp	/^int Main::execute( )$/;"	f	class:Main	signature:( )
+execute	main.h	/^        int execute();$/;"	p	class:Main	access:public	signature:()
+format	tags	/^!_TAG_FILE_FORMAT	2	\/extended format; --format=1 will not append ;" to lines\/$/;"	v
+handleEvent	main.cpp	/^void Main::handleEvent( SDL_Event* event )$/;"	f	class:Main	signature:( SDL_Event* event )
+handleEvent	main.h	/^        void handleEvent( SDL_Event* event );$/;"	p	class:Main	access:private	signature:( SDL_Event* event )
+height	bat.h	/^        double height;$/;"	m	class:Bat	access:private
+initialize	main.cpp	/^bool Main::initialize( )$/;"	f	class:Main	signature:( )
+initialize	main.h	/^        bool initialize( );$/;"	p	class:Main	access:private	signature:( )
+main	ball.h	/^        Main main;$/;"	m	class:Ball	access:public
+main	main.cpp	/^int main(int argc, char* args[])$/;"	f	signature:(int argc, char* args[])
+onMouseMotion	bat.cpp	/^void Bat::onMouseMotion(SDL_MouseMotionEvent* mouse)$/;"	f	class:Bat	signature:(SDL_MouseMotionEvent* mouse)
+onMouseMotion	bat.h	/^        void onMouseMotion(SDL_MouseMotionEvent* mouse);$/;"	p	class:Bat	access:public	signature:(SDL_MouseMotionEvent* mouse)
+onMouseMotion	stage.cpp	/^void Stage::onMouseMotion(SDL_MouseMotionEvent* mouse)$/;"	f	class:Stage	signature:(SDL_MouseMotionEvent* mouse)
+onMouseMotion	stage.h	/^        void onMouseMotion(SDL_MouseMotionEvent* mouse);$/;"	p	class:Stage	access:public	signature:(SDL_MouseMotionEvent* mouse)
+player	stage.h	/^        Bat player;$/;"	m	class:Stage	access:private
+render	NPC.cpp	/^void NPC::render( SDL_Renderer* renderer )$/;"	f	class:NPC	signature:( SDL_Renderer* renderer )
+render	NPC.h	/^        void render( SDL_Renderer* renderer );$/;"	p	class:NPC	access:public	signature:( SDL_Renderer* renderer )
+render	ball.cpp	/^void Ball::render( SDL_Renderer* renderer )$/;"	f	class:Ball	signature:( SDL_Renderer* renderer )
+render	ball.h	/^        void render( SDL_Renderer* renderer );$/;"	p	class:Ball	access:public	signature:( SDL_Renderer* renderer )
+render	bat.cpp	/^void Bat::render( SDL_Renderer* renderer )$/;"	f	class:Bat	signature:( SDL_Renderer* renderer )
+render	bat.h	/^        void render( SDL_Renderer* renderer);$/;"	p	class:Bat	access:public	signature:( SDL_Renderer* renderer)
+render	main.cpp	/^void Main::render( )$/;"	f	class:Main	signature:( )
+render	main.h	/^        void render();$/;"	p	class:Main	access:private	signature:()
+render	stage.cpp	/^void Stage::render( SDL_Renderer* renderer )$/;"	f	class:Stage	signature:( SDL_Renderer* renderer )
+render	stage.h	/^        void render( SDL_Renderer* renderer );$/;"	p	class:Stage	access:public	signature:( SDL_Renderer* renderer )
+renderer	main.h	/^        SDL_Renderer* renderer;$/;"	m	class:Main	access:private
+running	main.h	/^        bool running;$/;"	m	class:Main	access:private
+stage	main.h	/^        Stage stage;$/;"	m	class:Main	access:private
+targetY	bat.h	/^        double targetY;$/;"	m	class:Bat	access:private
+update	NPC.cpp	/^void NPC::update( int dt )$/;"	f	class:NPC	signature:( int dt )
+update	NPC.h	/^        void update( int dt );$/;"	p	class:NPC	access:public	signature:( int dt )
+update	bat.cpp	/^void Bat::update( double dt )$/;"	f	class:Bat	signature:( double dt )
+update	bat.h	/^        void update( int dt );$/;"	p	class:Bat	access:public	signature:( int dt )
+update	main.cpp	/^void Main::update( int dt )$/;"	f	class:Main	signature:( int dt )
+update	main.h	/^        void update( int dt );$/;"	p	class:Main	access:private	signature:( int dt )
+update	stage.cpp	/^void Stage::update( int dt )$/;"	f	class:Stage	signature:( int dt )
+update	stage.h	/^        void update( int dt );$/;"	p	class:Stage	access:public	signature:( int dt )
+width	bat.h	/^        double width;$/;"	m	class:Bat	access:private
+window	main.h	/^        SDL_Window* window;$/;"	m	class:Main	access:private
+windowHeight	main.h	/^        static const int windowHeight = 600;$/;"	m	class:Main	access:public
+windowWidth	main.h	/^        static const int windowWidth = 800;$/;"	m	class:Main	access:public
+x	bat.h	/^        double x;$/;"	m	class:Bat	access:private
+y	bat.h	/^        double y;$/;"	m	class:Bat	access:private

@@ -6,30 +6,32 @@
 #include "ball.h"
 #include "bat.h"
 
-Stage::Stage()
+Stage::Stage():player(20), npc(800-40)
 {
-
 }
 
 void Stage::render( SDL_Renderer* renderer )
 {
      SDL_SetRenderDrawColor( renderer, 0, 175, 255, 255 );
 
-     player.render( renderer, 20, 20);
+     player.render( renderer );
 
-     Bat npc;
-     npc.render( renderer, 760, 490);
+     npc.render( renderer );
 
-     Ball ball;
      ball.render( renderer );
 }
 
-void Stage::update( int dt )
+void Stage::update( double dt )
 {
+    player.update( dt );
 
+    npc.control( ball.y );
+    npc.update( dt );
+
+    ball.update( dt );
 }
 
 void Stage::onMouseMotion(SDL_MouseMotionEvent* mouse)
 {
-    player.onMouseMotion(mouse);
+    player.control( mouse->y );
 }

@@ -3,6 +3,7 @@
 
 #include <SDL2/SDL.h>
 #include "bat.h"
+#include "ball.h"
 
 class Stage
 {
@@ -10,12 +11,14 @@ class Stage
         Stage();
         void render( SDL_Renderer* renderer );
 
-        void update( int dt );
+        void update( double dt );
 
         void onMouseMotion(SDL_MouseMotionEvent* mouse);
 
     private:
         Bat player;
+        Bat npc;
+        Ball ball;
 
 };
 

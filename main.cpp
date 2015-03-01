@@ -1,10 +1,11 @@
 #include <iostream>
 #include "main.h"
 
+#define MAX_DT 0.025
+
 Main::Main( )
 {
     running = true;
-
     window = NULL;
     renderer = NULL;
 }
@@ -16,22 +17,28 @@ int Main::execute( )
 
     SDL_Event sdlEvent;
 
-    Uint32 lastFrame = SDL_GetTicks();
-    Uint32 now;
-    int dt;
+    double lastFrame = SDL_GetTicks() / 1000.0;
+    double now;
+    double dt;
+    double game_now = lastFrame;
 
     while ( running )
     {
         while ( SDL_PollEvent( &sdlEvent ))
             handleEvent( &sdlEvent );
 
-        now = SDL_GetTicks();
+        now = SDL_GetTicks() / 1000.0;
         dt = now - lastFrame;
-        lastFrame = now;
-
-        update( dt );
+        double game_dt = fmin(dt, MAX_DT);
+        int reps = 0;
+        while(game_now < now) {
+            update( game_dt );
+            game_now += game_dt;
+            reps++;
+        }
+        printf("now=%8.4f  game_now=%8.4f  dt=%6.4f  game_dt=%6.4f  reps=%d\n", now, game_now, dt, game_dt, reps);
         render( );
-
+        lastFrame = now;
         SDL_Delay( 1 );
     }
 
@@ -53,7 +60,7 @@ bool Main::initialize( )
     if ( window == NULL )
         return false;
 
-    renderer = SDL_CreateRenderer( window, -1, 0 );
+    renderer = SDL_CreateRenderer( window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC );
 
     if ( renderer == NULL )
         return false;
@@ -72,7 +79,7 @@ void Main::render( )
     SDL_RenderPresent( renderer );
 }
 
-void Main::update( int dt )
+void Main::update( double dt )
 {
     stage.update( dt );
 }

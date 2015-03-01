@@ -2,8 +2,7 @@
 #define _Ball_H_
 
 #include <SDL2/SDL.h>
-#include "stage.h"
-#include "main.h"
+#include "rect.h"
 
 class Ball
 {
@@ -12,9 +11,15 @@ class Ball
         Ball( );
 
         void render( SDL_Renderer* renderer );
+        void update( double dt );
 
-        SDL_Rect ball;
-        Main main;
+        Rect ball;
+
+        double x;
+        double y;
+        double dx;
+        double dy;
+
 };
 
 #endif

@@ -6,9 +6,18 @@
 class Bat
 {
     public:
-        Bat( );
-        void render( SDL_Renderer* renderer, int x, int y);
-        void onMouseMotion(SDL_MouseMotionEvent* mouse);
+        Bat(int x);
+        void render( SDL_Renderer* renderer);
+        void update( double dt );
+        void control( int y );
+
+    private:
+        double targetY;
+        double y;
+        double dy;
+        double x;
+        double width;
+        double height;
 };
 
 #endif
