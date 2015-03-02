@@ -16,6 +16,8 @@ class Ball
         Rect ball;
         bool collision(Rect* other);
 
+        void respawn();
+
 
         double x;
         double y;

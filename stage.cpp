@@ -41,7 +41,8 @@ void Stage::update( double dt )
     //Wall Right
     if((ball.x + ball.w) >= Main::windowWidth)
     {
-        ball.dx = -(abs(ball.dx));
+        //ball.dx = -(abs(ball.dx));
+        ball.respawn();
     }
 
     //Wall Up
@@ -50,25 +51,26 @@ void Stage::update( double dt )
         ball.dy = abs(ball.dy);
     }
 
-    //Wall Right
+    //Wall Left
     if((ball.x + ball.w) <= ball.w)
     {
-        ball.dx = abs(ball.dx);
+        //ball.dx = abs(ball.dx);
+        ball.respawn();
     }
 
 
     Rect* npc = this->npc.getRect();
     if(ball.collision(npc))
     {
-        ball.dx = -(abs(ball.dx)+10);
-        ball.dy = ball.dy+5;
+        ball.dx = -(abs(ball.dx));
+        ball.dy = ball.dy;
     }
 
     Rect* player = this->player.getRect();
     if(ball.collision(player))
     {
-        ball.dx = (abs(ball.dx)+10  );
-        ball.dx = ball.dx+5;
+        ball.dx = (abs(ball.dx));
+        ball.dx = ball.dx;
     }
 
 }
