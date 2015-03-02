@@ -16,6 +16,8 @@ class Ball
         Rect ball;
         bool collision(Rect* other);
 
+        void fill_circle(SDL_Renderer* renderer, int x, int y, int r);
+
         void respawn();
 
 
