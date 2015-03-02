@@ -21,6 +21,23 @@ void Stage::render( SDL_Renderer* renderer )
      npc.render( renderer );
 
      ball.render( renderer );
+
+     SDL_SetRenderDrawColor( renderer, 255, 255, 255, 255 );
+     int count1 = 0;
+     bool draw = true;
+     for( int i = 0; i < Main::windowHeight; i++ ) {
+        if(draw)
+            SDL_RenderDrawPoint( renderer, Main::windowWidth / 2, i);
+        if(count1 > 10)
+        {
+            if(draw)
+                draw = false;
+            else
+                draw = true;
+            count1 = 0;
+        }
+        count1++;
+     }
 }
 
 void Stage::update( double dt )
