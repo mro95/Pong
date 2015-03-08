@@ -28,7 +28,7 @@ void Stage::render( SDL_Renderer* renderer )
      for( int i = 0; i < Main::windowHeight; i++ ) {
         if(draw)
             SDL_RenderDrawPoint( renderer, Main::windowWidth / 2, i);
-        if(count1 > 10)
+        if(count1 >= 10)
         {
             if(draw)
                 draw = false;

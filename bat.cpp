@@ -8,7 +8,7 @@
 #define MAX_SPEED 1200
 #define BRAKE_SPEED 40
 
-Bat::Bat(double x): bat(x, y, width, height)
+Bat::Bat(double x): bat(x, 0, 0, 0)
 {
     targetY = 0;
     this->y = 0;

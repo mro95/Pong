@@ -20,6 +20,10 @@ class Main {
 
         SDL_Window* window;
         SDL_Renderer* renderer;
+        SDL_Surface* circle;
+        SDL_Texture* circleTexture;
+
+        //void fill_circle(int mx, int my, int r);
 
         void handleEvent( SDL_Event* event );
 

@@ -2,6 +2,7 @@
 #include <unistd.h>
 
 #include "main.h"
+#include "circle.h"
 
 #define MAX_DT 0.025
 
@@ -74,6 +75,30 @@ bool Main::initialize( )
     if ( renderer == NULL )
         return false;
 
+
+    circle = SDL_CreateRGBSurface(0, 100, 100, 32, 0,0,0,0);
+    if (circle == NULL) {
+        fprintf(stderr, "CreateRGBSurface failed: %s\n", SDL_GetError());
+        exit(1);
+    }
+
+    SDL_SetSurfaceBlendMode(circle, SDL_BLENDMODE_ADD);
+
+    SDL_LockSurface(circle);
+    Circle* c = new Circle();
+    c->setCircle(circle);
+    c->createFilledCircle(50,50,50);
+    SDL_UnlockSurface(circle);
+
+    circleTexture = SDL_CreateTextureFromSurface(renderer, circle);
+    SDL_SetTextureAlphaMod(circleTexture, 255);
+    //SDL_SetTextureBlendMode(circleTexture, SDL_BLENDMODE_ADD);
+
+    if (circleTexture == NULL) {
+        fprintf(stderr, "CreateTextureFromSurface failed: %s\n", SDL_GetError());
+        exit(1);
+    }
+
     return true;
 }
 
@@ -81,9 +106,16 @@ void Main::render( )
 {
     SDL_SetRenderDrawColor( renderer, 0, 0, 0, 255 );
 
+
     SDL_RenderClear( renderer );
 
     stage.render( renderer );
+
+
+    SDL_Rect r = { 10, 10, 100, 100};
+    SDL_RenderCopy(renderer, circleTexture, NULL, &r);
+    //SDL_SetTextureAlphaMod(circleTexture, 100);
+    SDL_UpdateWindowSurface(window);
 
     SDL_RenderPresent( renderer );
 }

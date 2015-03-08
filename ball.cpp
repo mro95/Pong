@@ -2,7 +2,7 @@
 #include "main.h"
 #include <math.h>
 
-Ball::Ball(): ball(x,y,20,20)
+Ball::Ball(): ball(0,0,20,20)
 {
     x = ((800/2) - (20 / 2));
     y = ((600/2) - (20 / 2));
@@ -28,14 +28,14 @@ void Ball::render( SDL_Renderer* renderer )
     SDL_RenderFillRect( renderer, &r );
 
     //SDL_Surface* surface = SDL_CreateRGBSurface(0, 50,50,32,255,0,0,255);
-    fill_circle(renderer, 500,500,100);
-    fill_circle(renderer, 200,200,100);
-    fill_circle(renderer, 240,300,100);
-    fill_circle(renderer, 360,600,100);
-    fill_circle(renderer, 480,300,100);
-    fill_circle(renderer, 340,400,100);
-    fill_circle(renderer, 360,300,100);
-    fill_circle(renderer, 380,100,100);
+//    fill_circle(renderer, 500,500,100);
+//    fill_circle(renderer, 200,200,100);
+//    fill_circle(renderer, 240,300,100);
+//    fill_circle(renderer, 360,600,100);
+//    fill_circle(renderer, 480,300,100);
+//    fill_circle(renderer, 340,400,100);
+//    fill_circle(renderer, 360,300,100);
+//    fill_circle(renderer, 380,100,100);
 //    fill_circle(renderer, 440,300,100);
 //    fill_circle(renderer, 460,500,100);
 //    fill_circle(renderer, 480,200,100);
