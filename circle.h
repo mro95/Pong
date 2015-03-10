@@ -8,7 +8,7 @@ class Circle
 {
     public:
         Circle();
-        void createFilledCircle(int mx, int my, int r);
+        void createFilledCircle(double mx, double my, double r);
         SDL_Surface* getCircle();
         void setCircle(SDL_Surface* s);
 
